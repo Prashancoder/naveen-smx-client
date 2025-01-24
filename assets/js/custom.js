@@ -25,6 +25,10 @@ $(document).ready(function(){
   
   // -------------------------------------------------------------------
 
+  // slider carasusal course
+ 
+
+  ///slider carausal course end
     // product slider
     $('.as_product_slider').slick({
         arrows: false,

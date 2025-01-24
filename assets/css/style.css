@@ -994,10 +994,6 @@ a:visited {
 
 
 
-
-
-
-
  
 /* --------------------------- */
 .as_contact_expert .as_icon:before {
@@ -1242,110 +1238,180 @@ a:visited {
 /* course css start */
 
 /* course css  start*/
+
+
+/*========== Base Styles ==========*/
 .course-intro {
   text-align: center;
-  margin-bottom: 20px;
 }
-
 .course-intro h1 {
-  margin-top: 70px;
   font-size: 2rem;
-  color: #333;
 }
-
 .course-intro p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1rem;
+  color: black;
 }
 
-
-
-.courses {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards in one row for full screen */
+/* Swiper Container */
+.swiper-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 ;
+  position: relative; /* This ensures absolutely positioned arrows stay within .swiper-container */
 }
 
-@media screen and (max-width: 1024px) {
-  .courses {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards in one row for medium screens */
-  }
+.swiper-wrapper {
+  display: flex;
 }
 
-@media screen and (max-width: 768px) {
-  .courses {
-    grid-template-columns: repeat(1, 1fr); /* 1 card per row for small screens */
-  }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Card */
 .card {
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  color: black;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure even spacing for all elements */
-  color: rgb(86, 83, 83);
+  align-items: center;
+  width: 300px;
+  height: 350px; /* Fixed height for uniformity on larger screens */
+  background-color: #fff;
+  transition: background 0.5s, color 0.5s;
 }
 
 .card:hover {
-  background-image: -moz-linear-gradient(
-    0deg,
-    rgb(244, 170, 54) 0%,
-    rgb(243, 115, 53) 100%
-  );
-  background-image: -webkit-linear-gradient(
-    0deg,
-    rgb(244, 170, 54) 0%,
-    rgb(243, 115, 53) 100%
-  );
-  background-image: -ms-linear-gradient(
-    0deg,
-    rgb(244, 170, 54) 0%,
-    rgb(243, 115, 53) 100%
-  );
-  color: white;
+  background-image: linear-gradient(0deg, rgb(244, 170, 54) 0%, rgb(243, 115, 53) 100%);
+  color: #fff;
 }
 
 .card h3 {
-  color: black;
+  font-size: 1.5rem;
+  color: #333;
   margin-bottom: 15px;
 }
 
 .card ul {
-  text-align: left;
-  padding: 0;
   list-style: none;
-  margin-bottom: 15px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 0.9rem;
+  flex-grow: 1;
 }
-
 .card ul li {
   margin-bottom: 8px;
 }
 
-.price {
-  font-size: 1.2em;
+.card .Price {
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: auto; /* Push price to the bottom before the button */
-  margin-bottom: 15px; /* Space between price and button */
+  margin: 20px 0 10px 0;
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 50px;
-  background-color: rgb(243, 115, 53);
-  color: #fff;
-  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #f37335;
+  color: white;
+  border: none;
   border-radius: 20px;
-  align-self: center; /* Ensure button is centered */
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #f37335;
+  border: 1px solid #f37335;
 }
 
-.button:hover {
-  color: rgb(243, 115, 53);
-  background-color: white;
+/*========== Swiper Navigation Buttons ==========*/
+/* Centered vertically in the container */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f37335;
+  top: 50%;
+  transform: translateY(-50%);
 }
+.swiper-button-prev {
+  left: 0;  /* Adjust as needed */
+}
+.swiper-button-next {
+  right: 0; /* Adjust as needed */
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+}
+
+/*========== Responsive Adjustments ==========*/
+
+/* Tablet Portrait and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .course-intro h1 {
+    font-size: 1.5rem;
+  }
+  .course-intro p {
+    font-size: 0.95rem;
+  }
+  
+  /* Let Swiper show only 1 slide by default on smaller devices
+     (Though Swiper's JS breakpoints also handle this, 
+      we're ensuring CSS doesn't conflict with user sizing) */
+  .swiper-container {
+    width: 95%;
+    padding: 10px 0;
+  }
+  
+  /* Cards: make them more flexible */
+  .card {
+    width: 90%;
+    height: auto; /* let content dictate height on smaller screens */
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .course-intro h1 {
+    font-size: 1.4rem;
+  }
+  .course-intro p {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+  
+  /* If you feel the arrows are too large or too close on very small screens,
+     we can shrink them or move them slightly inward. Adjust if needed. */
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 16px; /* slightly smaller icons on mobile */
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+
+
+   
+
+
 
 
 /* why choose css start */
@@ -2695,7 +2761,7 @@ section.as_pricing_plan .row {
   padding: 15px 30px;
   resize: none;
 }
-.as_comnt_detail .{
+.as_comnt_detail{
   display: flex;
   align-items: center;
   margin-bottom: 17px;
