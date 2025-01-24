@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astrology</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link href="assets/css/font.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/select2/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/airdatepicker/datepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="as_loader">
+        <img src="/IMAGES/loader_gif_1.gif" alt="" class="img-responsive">
+    </div> 
+    <div class="as_main_wrapper as_about_page">
+        <!-- navbar -->
+        <section class="as_header_wrapper">
+            <div class="as_info_detail">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="as_logo">
+                            <a href="index.html">
+                                <img src="/IMAGES/logo.png" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6">
+                        <div class="as_right_info">
+                            <div class="as_menu_wrapper">
+                                <span class="as_toggle">
+                                    <img src="assets/images/svg/menu.svg" alt="">
+                                </span>
+                                <div class="as_menu">
+                                    <ul>
+                                        <li><a href="index.html" >home</a></li>
+                                        <li><a href="about.html" class="active">about us</a></li>
+                                          <li><a href="services.html">services</a></li>
+                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="tel:+919099799780">Call Us Now!</a> </li>
+                                
+                                    </ul>
+                                </div>
+                            </div>
+                           
+
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- carausal -->
+       <section class="as_breadcrum_wrapper">
+            <div class="container">
+               
+                <div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                    <h3>"At  Shivaay Jyotish, we blend ancient astrological wisdom with modern insights to provide you with personalized guidance that empowers you to live in alignment with the universe." 🌌</h3>
+
+                        <!-- --------------------------------------- -->
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="as_about_wrapper as_padderTop80 as_padderBottom80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <h1 class="as_heading">About Astrology</h1>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="15" viewBox="0 0 240 15">
+                            <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="240" height="15" xlink:href="data:img/png;base64,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"/>
+                          </svg>
+                          </span>
+                        <p class="as_font14 as_padderTop20 as_padderBottom50" > Your astrology chart reveals a blend of your core self (Sun sign), emotional world (Moon sign), and outward persona (Rising sign). It highlights how you think, love, and act through Mercury, Venus, and Mars. The houses show where you focus your energy in life, and aspects between planets reflect areas of ease or challenge. Together, they offer insights into your strengths, growth opportunities, and how you navigate the world.</p>
+                    </div>
+                    <!-- <div class="col-lg-6 col-md-6">
+                        <div class="as_aboutimg text-right">
+                            <img src="assets/images/What_we_do.jpg" alt="img" class="img-responsive">
+                            <span class="as_play"><img src="assets/images/play.png" alt=""></span>
+                        </div> 
+                    </div> -->
+
+
+                    
+                    <!-- <div class="col-lg-6 col-md-6">
+                        <div class="as_about_detail">
+                            <h1 class="as_heading">Client Testimonials: Astrology Counseling Experience</h1>
+                            <div class="as_paragraph_wrapper">
+                                <p class="as_margin0 as_font14 as_padderBottom10">The client found the session insightful, particularly the exploration of their Sun sign for clarity on values and career. Understanding their Moon sign highlighted emotional needs, while Venus and Mars provided clarity on relationships.</p>
+                                <p class="as_font14"> Overall, the session offered empowerment and a renewed sense of direction, with the client eager to continue using astrology for personal growth.
+
+
+
+                                </p>
+                            </div>
+
+                            <div class="as_contact_expert">
+                                <span class="as_icon">
+                                   <img src="assets/images/svg/about.svg" alt="">
+                                </span>
+                                <span class="as_year_ex">
+                                    30
+                                </span>
+                                <div>
+                                    <h5>years of</h5>
+                                    <h1>Experience</h1>
+                                </div>
+                            </div>
+                            <a href="about.html" class="as_btn">read more</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+       
+       
+        <!-- public review -->
+        <section class="as_service_wrapper as_padderTop80 as_padderBottom80">
+            <div class="container">
+              
+                <div class="as_comment_section as_padderTop50">
+                    <h1 class="as_heading">What Clients Say About Their Astrology Counseling Sessions</h1>
+                    <ul>
+                        <li>
+
+                            <div class="as_comnt_detail" >
+                                <div class="as_comnt_title " style="color: #f88526;">
+                                    <h4 class="as_subheading as_margin0"style="color: #f88526;" >Ria Mehrotra Chhablani </h4>
+                                    <span class="as_font14 as_time"><img src="assets/images/svg/clock.svg" alt=""> 15:30 AM</span>
+                                    <span class="as_font14 as_date"><img src="assets/images/svg/calendar.svg" alt=""> Nov 16, 2024</span>
+                                    <a class="as_font14 as_reply"><img src="assets/images/svg/reply.svg" alt=""></a>
+                                </div>
+                                <p class="as_font14" style="margin-right: 20px; padding-right: 10px; box-sizing: border-box;">"sir, I consulted you about pregnancy, and I’m so happy to share that I’m now pregnant! Thank you so much for your guidance and support during this journey. Your insights truly gave me hope and strength when I needed it the most. I’m beyond grateful for your help, and I feel so blessed to have received your advice. Looking forward to continuing this journey with your wisdom guiding me!"</p>
+                            </div>
+                            </li>
+                        <li>
+
+                            <div class="as_comnt_detail">
+                                <div class="as_comnt_title"style="color: #f88526;">
+                                    <h4 class="as_subheading as_margin0"style="color: #f88526;">Amit Joshi</h4>
+                                    <span class="as_font14 as_time"><img src="assets/images/svg/clock.svg" alt=""> 04:25 AM</span>
+                                    <span class="as_font14 as_date"><img src="assets/images/svg/calendar.svg" alt=""> July 5, 2024</span>
+                                    <a class="as_font14 as_reply"><img src="assets/images/svg/reply.svg" alt=""></a>
+                                </div>
+                                <p class="as_font14" style="margin-right: 20px; padding-right: 10px; box-sizing: border-box;">"I had the privilege of meeting Vivek sir in 2016 when I was going through one of the toughest times of my life. My mental health was at an all-time low, and I was drowning in financial worries. Thanks to Vivek sir’s wise guidance, I found my way back to stability and peace. She’s truly been a blessing in my life."</p>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="as_comnt_detail">
+                                <div class="as_comnt_title"style="color: #f88526;">
+                                    <h4 class="as_subheading as_margin0"style="color: #f88526;">Susmita Banerjee</h4>
+                                    <span class="as_font14 as_time"><img src="assets/images/svg/clock.svg" alt=""> 09:25 AM</span>
+                                    <span class="as_font14 as_date"><img src="assets/images/svg/calendar.svg" alt=""> July 29, 2023</span>
+                                    <a class="as_font14 as_reply"><img src="assets/images/svg/reply.svg" alt=""></a>
+                                </div>
+                                <p class="as_font14" style="margin-right: 20px; padding-right: 10px; box-sizing: border-box;">"Vivek sir is truly an angel to me. I’ve known her since 2016, during a time when I was struggling with depression and facing severe financial difficulties. Her support and guidance have been life-changing, and I’m forever grateful for the strength she gave me when I needed it the most. She has been a constant source of light and wisdom in my life."</p>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div class="as_comnt_detail">
+                                <div class="as_comnt_title"style="color: #f88526;">
+                                    <h4 class="as_subheading as_margin0"style="color: #f88526;">Rita Kapoor </h4>
+                                    <span class="as_font14 as_time"><img src="assets/images/svg/clock.svg" alt=""> 15:30 AM</span>
+                                    <span class="as_font14 as_date"><img src="assets/images/svg/calendar.svg" alt=""> March 3, 2024</span>
+                                    <a class="as_font14 as_reply"><img src="assets/images/svg/reply.svg" alt=""></a>
+                                </div>
+                                <p class="as_font14" style="margin-right: 20px; padding-right: 10px; box-sizing: border-box;">"I reached out to Vivek sir back in 2016 when I was feeling lost in life. The financial stress and emotional weight felt unbearable. But with her guidance, I started seeing hope again. She’s truly an angel, and I can't thank her enough for everything she’s done for me. Forever grateful!"</p>
+                            </div>
+                            </li>
+
+                            <li>
+
+                                <div class="as_comnt_detail">
+                                    <div class="as_comnt_title"style="color: #f88526;">
+                                        <h4 class="as_subheading as_margin0"style="color: #f88526;">Sandeep Verma</h4>
+                                        <span class="as_font14 as_time"><img src="assets/images/svg/clock.svg" alt="">  8:00 AM</span>
+                                        <span class="as_font14 as_date"><img src="assets/images/svg/calendar.svg" alt=""> June 3, 2023</span>
+                                        <a class="as_font14 as_reply"><img src="assets/images/svg/reply.svg" alt=""></a>
+                                    </div>
+                                    <p class="as_font14" style="margin-right: 20px; padding-right: 10px; box-sizing: border-box;">"Vivek sir helped me through some of the toughest times of my life. When I consulted her in 2022, I was drowning in both emotional and financial issues. Her insights and encouragement were exactly what I needed. Today, I’m in a much better place, and I’m incredibly grateful for her support.""</p>
+                                </div>
+                            </li>
+
+                        
+                    </ul>
+                </div>
+        </section>
+                 
+<!-- achievment -->
+      <!-- <section class="achievement">
+            <div class="as_blog_box">
+                <div class="as_blog_img">
+                    <h1 class="as_heading" style="margin-left: 5px; margin-right: 20px; padding-left: 10px; padding-right: 10px; box-sizing: border-box;">
+                        Recognizing Excellence: Our Journey of Achievements-
+                      </h1>
+                      <p class="as_font14 as_margin0 as_padderBottom10" style="margin-left: 20px; margin-right: 20px; padding-left: 10px; padding-right: 10px; box-sizing: border-box;">
+                        I am truly honoured to have been invited as the Chief Guest at the annual event of J.K.P.G Colleges Muzaffarnagar, an occasion that was also covered in the local news. Being recognized in this way is a significant achievement for me, and I felt privileged to address the bright and talented students, sharing my experiences and insights. The highlight of the event was presenting certificates to the deserving students, celebrating their hard work and dedication. It was an incredibly rewarding experience to see their achievements and be a part of such a meaningful occasion. This recognition, which was featured in the news, not only reflects my own journey but also inspires me to continue contributing to the growth and success of others.
+                      </p>
+                    
+                </div>
+                <div class="as_blog_detail">
+                    <ul>
+                        <li><a href="javascript:;"><img src="assets/images/svg/user2.svg" alt="">By - Admin</a></li>
+                        <li><a href="javascript:;"><img src="assets/images/svg/comment1.svg" alt="">10 comments</a></li>
+                        <li><a href="javascript:;"><img src="assets/images/svg/view1.svg" alt="">1k views</a></li>
+                    </ul>
+                    <h3 class="as_subheading">"Achievement in NLP Coaching Program: Certification by Dr. R.H.S. Rawat, News Interview, and Community Engagement"</h3>
+                    <p class="as_font14 as_margin0 as_padderBottom10">I am thrilled to have completed the NLP Coaching Program in Delhi from 5th September to 10th September, receiving my certification from Dr. R.H.S. Rawat, a respected Dharmguru and NLP coach. This program equipped me with transformative tools for personal and professional growth. I was also honoured to share my journey in a local news interview, reflecting on the impact of NLP on my life. Additionally, I had the opportunity to engage with a vibrant community during a meeting, further enriching my learning. This certification marks a significant milestone in my development, and I am excited to apply these teachings to help others unlock their potential.</p>
+                   
+                    <div class="row mt-2 g-3">
+                        <div class="col-sm-4">
+                            <img src="IMAGES/img1.jpeg" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="IMAGES/img2.jpeg" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="IMAGES/img3.jpeg" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+                    
+
+                    </div>
+                   
+                
+                </div>
+
+
+             
+        </section> -->
+
+        
+
+
+
+
+<!-- what my client says -->
+        
+<section class="as_customer_wrapper as_padderBottom80 as_padderTop80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="as_heading as_heading_center">What My Client Say</h1>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="240" height="15" viewBox="0 0 240 15">
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="240" height="15"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </span>
+                <p class="as_font14 as_padderBottom50 as_padderTop20">Discover how my astrological readings have
+                    made a difference in the lives of my clients. Their feedback and stories offer a glimpse
+                    into how astrology can provide practical insights and spiritual clarity.Hear from those who
+                    have had the opportunity to work with me. Their stories reflect how astrology can positively
+                    impact one's life decisions and personal growth.</p>
+
+                <div class="row as_customer_slider">
+                    <div class="col-lg-5 col-md-5 as_customer_nav">
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op1.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op4.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op2.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op5.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op3.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op6.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 as_customer_for">
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"I had an incredible experience with Shivaay Jyotish. His
+                                astrological insights were spot-on and helped me gain clarity about the
+                                direction of my life. I now feel more confident in my decisions. Highly
+                                recommended!"”</p>
+                            <h3>Rina Sharma <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"Dr. Tiwari's reading was truly insightful. His predictions
+                                were surprisingly accurate, and he provided practical guidance that helped me
+                                understand my personal challenges better. I’m grateful for his wisdom."</p>
+                            <h3>Rajesh Kumar <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"I’ve consulted many astrologers, but Shivaay Jyotish stands
+                                out for his professionalism and deep understanding of astrology. His advice was
+                                not only accurate but also very comforting. I feel empowered to take charge of
+                                my future."</p>
+                            <h3>Sushmita Banerjee <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"My consultation with Shivaay Jyotish was amazing. He answered
+                                all my questions with precision, and his insights gave me a new perspective on
+                                life. I highly recommend him to anyone looking for astrological guidance."</p>
+                            <h3>Vikram Singh <span></span></h3>
+
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"I was looking for some direction in my life, and Dr. Tiwari's
+                                guidance was exactly what I needed. His reading opened my eyes to new
+                                possibilities, and I feel more spiritually aligned than ever before. Thank you,
+                                Dr. Tiwari!"</p>
+                            <h3>Anjali Desai <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"Shivaay Jyotish's astrology consultation was transformative.
+                                He not only provided accurate predictions but also helped me understand the
+                                bigger picture of my life’s purpose. His advice has made a lasting impact on my
+                                journey."</p>
+                            <h3>Sandeep Agarwal <span></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+     <!-- footer below -->
+
+            <!-- footer below -->
+
+        <section class="as_footer_wrapper as_padderTop80">
+            <div class="container">
+         <div class="as_footer_inner as_padderTop10 as_padderBottom40">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <div class="as_footer_widget">
+                                        <div class="as_footer_logo">
+                                            <a href="index.html"><img src="/IMAGES/logo.png" alt="" class="img-responsive"></a>
+                                        </div>
+                                        
+                                        <ul class="as_contact_list">
+                                            <li>
+                                                <img src="assets/images/svg/map.svg" alt="">
+                                                <p>Greater Noida West
+                                                    Contact no: +(91) 9455087756</p>
+                                            </li>
+                                            <li>
+                                                
+                                            </li>
+                                            
+                                           
+
+                                            <li>
+                                                <img src="assets/images/svg/mail.svg" alt="">
+                                                <p>
+                                                    <a href="javascript:;">Nilesh.nilesh1217@gmail.com</a>
+                                                </p> 
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="as_footer_widget">
+                                    <h3 class="as_footer_heading">Quick Links</h3>
+
+                                    <ul>
+                                        <li><a href="about.html"> About Us</a></li>
+                                        <li><a href="services.html"> services</a></li>
+
+                                        <li><a href="contact.html"> Contact Us</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+
+                                
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="as_footer_widget">
+                                 
+
+
+                                 <!-- Map code start here -->
+
+                                        <div style="color: #fff;">
+                                            <h3>Our Location</h3>
+                                            <div style="width: 300px; height: 300px; position: relative;">
+                                              <iframe 
+                                                src="https://www.google.com/maps/embed/v1/search?q=MANGALAM+ASTRO&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                                style="width: 100%; height: 100%; border: 0; position: absolute; top: 0; left: 0;" 
+                                                allowfullscreen="" loading="lazy" frameborder="0">
+                                              </iframe>
+                                            </div>
+                                          </div>
+
+
+
+                                <!-- Map code end here  -->
+
+
+                                    
+
+
+
+
+                                  
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="as_copyright_wrapper text-center">
+                            <p>Copyright &copy; 2024 CMT AI. All Right Reserved.</p>
+
+                        </div> 
+                    </div>
+        </section>   
+        
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Modal -->
+    <div id="as_login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="as_login_box active">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter email" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter password here" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <div class="as_login_data">
+                                    <label>Remember me
+                                         <input type="checkbox" name="as_remember_me" value="">
+                                         <span class="checkmark"></span>
+                                    </label>
+                                    <a href="#">Forgot password ?</a>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:;" class="as_btn">login</a>
+                            </div>
+                        </form>
+                        <p class="text-center as_margin0 as_padderTop20">Create An Account ? <a href="javascript:;" class="as_orange as_signup">SignUp</a></p>
+                    </div>
+                    <div class="as_signup_box">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter name" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter email" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter password here" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter mobile number" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <select name="" class="form-control" id="">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:;" class="as_btn">Sign Up</a>
+                            </div>
+                        </form>
+                        <p class="text-center as_margin0 as_padderTop20">Have An Account ? <a href="javascript:;" class="as_orange as_login">Login</a></p>
+                    </div> 
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/countto/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/airdatepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/airdatepicker/i18n/datepicker.en.js"></script>
+    <script src="assets/js/custom.js"></script>  
+    <script src="assets/js/videoControl.js"></script>
+</body>
+</html>
+

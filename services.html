@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astrology</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link href="assets/css/font.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/select2/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/plugin/airdatepicker/datepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+
+
+    
+    <div class="as_loader">
+        <img src="/IMAGES/loader_gif_1.gif" alt="" class="img-responsive">
+    </div> 
+    <div class="as_main_wrapper as_service_page">
+        <!-- navbar -->
+        <section class="as_header_wrapper">
+            <div class="as_info_detail">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                            <div class="as_logo">
+                                <a href="index.html">
+                                    <img src="/IMAGES/logo.png" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6">
+                            <div class="as_right_info">
+                                <div class="as_menu_wrapper">
+                                    <span class="as_toggle">
+                                        <img src="assets/images/svg/menu.svg" alt="">
+                                    </span>
+                                    <div class="as_menu">
+                                        <ul>
+                                            <li><a href="index.html" >home</a></li>
+                                            <li><a href="about.html">about us</a></li>
+                                           <li><a href="services.html" class="active">services</a></li>
+                                           <li><a href="contact.html">contact</a></li>
+                                           <li><a href="tel:+919099799780">Call Us Now!</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                               
+    
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section> 
+
+        <!-- carausal -->
+       <section class="as_breadcrum_wrapper">
+         
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            <h3>"Our expert astrology services offer you tailored insights that align with your unique cosmic blueprint, empowering you to make informed decisions and live with purpose." 🌌</h3>
+
+                <!-- --------------------------------------- -->
+            </div>
+         </div>
+        
+        </section>
+        
+
+
+                  
+<!-- service and courses -->
+<section class="as_service_wrapper as_padderTop80 as_padderBottom80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="as_heading as_heading_center">our services</h1>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="15" viewBox="0 0 240 15">
+                    <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="240" height="15" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+                  </span>
+                <p class="as_font14 as_padderTop20 as_padderBottom20">We’re here to help you unlock your full potential with the timeless wisdom of Vedic astrology. Whether you’re seeking clarity in your <b>career, relationships, health,</b> or <b>finances</b>, our personalized readings offer practical advice and expert insights to help you navigate life’s challenges and move forward with confidence. We specialize in<b> tailored guidance </b>that empowers you to make informed decisions, align with your true path, and overcome obstacles. Our focus is on helping you create a life of <b>balance, success, and happiness</b>, whether it's advancing your career, improving your financial situation, or fostering deeper relationships. With our support, you’ll gain a clearer understanding of your journey and take meaningful steps toward a brighter, more fulfilling future.</p>
+            </div>
+        </div>
+
+          
+        <!-- services -->
+        <div class="row as_verticle_center">
+           <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="as_service_img">
+                    <img src="IMAGES/service_img2.png" alt="" class="as_service_circle img-responsive">
+                    <img src="/IMAGES//shivay-jyotish-2.jpg" alt="" class="as_service_img img-responsive">
+                </div>
+           </div>
+           <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="as_service_box text-center">
+                            <span class="as_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="85" height="70" viewBox="0 0 85 70"> <path d="M83.340,66.666 L70.391,66.666 C69.474,66.666 68.730,65.920 68.730,65.000 C68.730,64.079 69.474,63.333 70.391,63.333 L81.680,63.333 L81.680,20.000 L78.359,20.000 L78.359,58.333 C78.359,59.254 77.616,60.000 76.699,60.000 L49.119,60.000 C46.979,60.000 45.116,61.389 44.425,63.333 L55.449,63.333 C56.366,63.333 57.109,64.079 57.109,65.000 C57.109,65.920 56.366,66.666 55.449,66.666 L30.381,66.666 L30.381,68.333 C30.381,69.254 29.637,70.000 28.721,70.000 L22.080,70.000 C21.163,70.000 20.420,69.254 20.420,68.333 L20.420,66.666 L1.660,66.666 C0.743,66.666 -0.000,65.920 -0.000,65.000 L-0.000,18.333 C-0.000,17.413 0.743,16.667 1.660,16.667 L6.641,16.667 L6.641,11.667 C6.641,10.746 7.384,10.000 8.301,10.000 L17.871,10.000 L24.019,0.742 C24.327,0.278 24.845,-0.000 25.400,-0.000 C25.956,-0.000 26.474,0.278 26.782,0.742 L32.929,10.000 L35.859,10.000 C38.572,10.000 40.984,11.313 42.500,13.339 C44.016,11.313 46.428,10.000 49.141,10.000 L76.699,10.000 C77.616,10.000 78.359,10.746 78.359,11.667 L78.359,16.667 L83.340,16.667 C84.257,16.667 85.000,17.413 85.000,18.333 L85.000,65.000 C85.000,65.920 84.257,66.666 83.340,66.666 ZM20.420,52.725 C16.342,51.670 13.779,49.374 13.779,46.666 C13.779,45.746 14.523,45.000 15.439,45.000 C16.356,45.000 17.100,45.746 17.100,46.666 C17.100,47.466 18.238,48.488 20.231,49.188 L17.233,13.333 L9.961,13.333 L9.961,56.666 L20.420,56.666 L20.420,52.725 ZM20.420,60.000 L8.301,60.000 C7.384,60.000 6.641,59.254 6.641,58.333 L6.641,20.000 L3.320,20.000 L3.320,63.333 L20.420,63.333 L20.420,60.000 ZM30.381,63.333 L40.533,63.333 C39.847,61.393 38.002,60.000 35.838,60.000 L30.381,60.000 L30.381,63.333 ZM23.740,66.666 L27.060,66.666 L27.060,53.268 C26.514,53.310 25.960,53.333 25.400,53.333 C24.841,53.333 24.287,53.310 23.740,53.268 L23.740,66.666 ZM25.400,4.671 L20.462,12.107 L23.623,49.909 C24.205,49.967 24.797,50.000 25.400,50.000 C26.003,50.000 26.596,49.967 27.178,49.909 L30.338,12.107 L25.400,4.671 ZM40.840,18.333 C40.840,15.576 38.606,13.333 35.859,13.333 L33.568,13.333 L30.570,49.188 C32.563,48.487 33.701,47.466 33.701,46.666 C33.701,45.746 34.445,45.000 35.361,45.000 C36.278,45.000 37.021,45.746 37.021,46.666 C37.021,49.374 34.459,51.670 30.381,52.725 L30.381,56.666 L35.838,56.666 C37.715,56.666 39.448,57.296 40.840,58.354 L40.840,18.333 ZM75.039,13.333 L49.141,13.333 C46.394,13.333 44.160,15.576 44.160,18.333 L44.160,58.332 C45.552,57.286 47.274,56.666 49.119,56.666 L75.039,56.666 L75.039,13.333 ZM47.978,25.000 C47.978,24.079 48.722,23.333 49.639,23.333 L51.584,23.333 C54.169,23.333 56.598,22.323 58.426,20.488 C58.737,20.176 59.159,20.000 59.600,20.000 C60.040,20.000 60.462,20.176 60.773,20.488 C62.601,22.323 65.031,23.333 67.615,23.333 L69.560,23.333 C70.477,23.333 71.221,24.079 71.221,25.000 L71.221,29.648 C71.221,37.731 67.221,45.235 60.521,49.720 C60.242,49.907 59.921,50.000 59.600,50.000 C59.279,50.000 58.957,49.907 58.679,49.720 C51.979,45.235 47.978,37.731 47.978,29.648 L47.978,25.000 ZM51.299,29.648 C51.299,36.235 54.382,42.377 59.600,46.293 C64.817,42.377 67.900,36.235 67.900,29.648 L67.900,26.667 L67.615,26.667 C64.672,26.667 61.878,25.691 59.600,23.891 C57.321,25.691 54.528,26.667 51.584,26.667 L51.299,26.667 L51.299,29.648 ZM59.600,30.000 C62.346,30.000 64.580,32.243 64.580,35.000 C64.580,37.757 62.346,40.000 59.600,40.000 C56.853,40.000 54.619,37.757 54.619,35.000 C54.619,32.243 56.853,30.000 59.600,30.000 ZM59.600,36.667 C60.515,36.667 61.260,35.919 61.260,35.000 C61.260,34.081 60.515,33.333 59.600,33.333 C58.684,33.333 57.939,34.081 57.939,35.000 C57.939,35.919 58.684,36.667 59.600,36.667 ZM62.920,63.333 C63.837,63.333 64.580,64.079 64.580,65.000 C64.580,65.920 63.837,66.666 62.920,66.666 C62.003,66.666 61.260,65.920 61.260,65.000 C61.260,64.079 62.003,63.333 62.920,63.333 Z" class="cls-1"/> </svg>                                  
+                            </span>
+
+                            <h4 class="as_subheading">Horoscope Making & Customized Consultations </h4>
+                            <p class="as_paddingBottom10"> <br> </p>
+                         
+
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin-top:-9%;">
+                                    <button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>
+                                  
+                                    <a href="contact.html">
+                                      <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                    </a>
+                                  </div>
+                                  
+                                  
+                                  
+                            </a>
+                        </div> 
+                        
+                    </div>
+
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="as_service_box text-center">
+                            <span class="as_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="71" height="71" viewBox="0 0 71 71"> <path d="M60.602,60.602 C53.897,67.307 44.982,71.000 35.500,71.000 C28.999,71.000 22.640,69.226 17.111,65.871 C16.265,65.358 15.429,64.802 14.626,64.218 C14.153,63.873 14.049,63.209 14.393,62.736 C14.738,62.262 15.402,62.158 15.875,62.503 C16.630,63.052 17.416,63.575 18.211,64.058 C23.409,67.211 29.387,68.878 35.500,68.878 C44.416,68.878 52.798,65.406 59.102,59.102 C65.407,52.798 68.878,44.416 68.878,35.500 C68.878,26.584 65.407,18.202 59.102,11.898 C52.798,5.593 44.416,2.121 35.500,2.121 C26.584,2.121 18.202,5.593 11.898,11.898 C5.593,18.202 2.121,26.584 2.121,35.500 C2.121,44.187 5.441,52.414 11.469,58.665 C11.876,59.087 11.864,59.759 11.442,60.165 C11.020,60.572 10.349,60.560 9.942,60.138 C3.531,53.489 -0.000,44.739 -0.000,35.500 C-0.000,26.017 3.693,17.103 10.398,10.398 C17.103,3.693 26.018,-0.000 35.500,-0.000 C44.982,-0.000 53.897,3.693 60.602,10.398 C67.307,17.103 71.000,26.017 71.000,35.500 C71.000,44.982 67.307,53.897 60.602,60.602 ZM27.588,8.676 C27.440,8.109 27.780,7.530 28.347,7.382 C32.783,6.227 37.443,6.129 41.922,7.090 C55.258,9.953 65.084,22.126 65.084,35.761 C65.084,51.930 51.930,65.084 35.760,65.084 C32.479,65.084 29.202,64.534 26.104,63.450 C20.792,61.592 16.067,58.180 12.613,53.740 C11.753,52.635 11.028,51.463 10.291,50.277 C9.858,49.580 9.529,49.050 9.243,48.273 C8.954,47.485 8.554,46.733 8.260,45.943 C7.053,42.691 6.437,39.229 6.437,35.761 C6.437,30.049 8.124,24.405 11.254,19.652 C14.116,15.305 18.131,11.754 22.798,9.450 C23.324,9.191 23.960,9.407 24.219,9.932 C24.478,10.457 24.263,11.094 23.738,11.353 C19.362,13.512 15.651,16.809 12.979,20.897 L25.467,20.897 L32.871,8.713 C31.523,8.856 30.188,9.095 28.882,9.435 C28.314,9.583 27.736,9.243 27.588,8.676 ZM38.344,8.681 L45.767,20.897 L58.532,20.897 C54.114,14.153 46.785,9.481 38.344,8.681 ZM59.662,23.139 C59.631,23.084 59.570,23.019 59.456,23.019 L47.056,23.019 L53.462,33.560 L59.658,23.378 C59.717,23.280 59.693,23.194 59.662,23.139 ZM62.963,35.761 C62.963,32.094 62.232,28.595 60.911,25.400 L54.703,35.602 L60.985,45.939 C62.259,42.793 62.963,39.358 62.963,35.761 ZM59.779,48.271 C59.809,48.216 59.834,48.130 59.774,48.033 L53.461,37.643 L46.920,48.391 L59.573,48.391 C59.687,48.391 59.748,48.326 59.779,48.271 ZM35.617,62.667 C35.678,62.667 35.762,62.647 35.819,62.553 L41.687,52.910 C41.991,52.410 42.644,52.251 43.144,52.556 C43.645,52.860 43.804,53.513 43.499,54.013 L38.116,62.859 C46.699,62.120 54.156,57.378 58.605,50.513 L28.089,50.513 L35.416,62.553 C35.473,62.647 35.557,62.667 35.617,62.667 ZM33.102,62.832 L25.605,50.513 L12.917,50.513 C17.313,57.297 24.646,62.008 33.102,62.832 ZM11.675,48.391 L24.314,48.391 L17.774,37.643 L11.476,48.007 C11.541,48.136 11.608,48.264 11.675,48.391 ZM10.491,25.676 C9.219,28.863 8.558,32.279 8.558,35.761 C8.558,39.250 9.220,42.587 10.422,45.655 L16.531,35.602 L10.491,25.676 ZM11.778,23.019 C11.756,23.019 11.736,23.023 11.718,23.028 C11.664,23.129 11.610,23.231 11.557,23.333 C11.563,23.348 11.567,23.362 11.577,23.378 L17.772,33.559 L24.178,23.019 L11.778,23.019 ZM19.014,35.601 L26.798,48.391 L44.477,48.391 L52.220,35.601 L44.574,23.019 L26.660,23.019 L19.014,35.601 ZM27.950,20.897 L43.285,20.897 L35.819,8.612 C35.806,8.590 35.791,8.573 35.775,8.559 C35.770,8.559 35.765,8.558 35.760,8.558 C35.659,8.558 35.557,8.562 35.455,8.563 C35.441,8.577 35.427,8.592 35.415,8.612 L27.950,20.897 ZM45.214,37.193 L37.193,45.214 C36.726,45.681 36.113,45.914 35.500,45.914 C34.887,45.914 34.274,45.681 33.807,45.214 L25.786,37.193 C24.852,36.259 24.852,34.740 25.786,33.806 L33.807,25.785 C34.740,24.852 36.259,24.852 37.193,25.785 L45.214,33.806 C46.148,34.740 46.148,36.259 45.214,37.193 ZM43.714,35.307 L35.693,27.285 C35.640,27.232 35.570,27.206 35.500,27.206 C35.430,27.206 35.360,27.232 35.307,27.285 L27.286,35.307 C27.179,35.413 27.179,35.586 27.286,35.693 L35.307,43.714 C35.413,43.821 35.587,43.821 35.693,43.714 L43.714,35.693 C43.821,35.586 43.821,35.413 43.714,35.307 ZM35.500,39.262 C33.426,39.262 31.738,37.574 31.738,35.500 C31.738,33.425 33.426,31.737 35.500,31.737 C37.574,31.737 39.262,33.425 39.262,35.500 C39.262,37.574 37.574,39.262 35.500,39.262 ZM35.500,33.859 C34.595,33.859 33.859,34.595 33.859,35.500 C33.859,36.404 34.595,37.140 35.500,37.140 C36.405,37.140 37.141,36.404 37.141,35.500 C37.141,34.595 36.405,33.859 35.500,33.859 Z" class="cls-1"/> </svg>                          
+                            </span>
+
+                            <h4 class="as_subheading">Vastu Consultation for Commercial and Domestic Spaces </h4>
+                            <p class="as_paddingBottom10"></p>
+                         
+                               
+                                <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+<button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>                                           
+                                    <a href="contact.html">
+                                        <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                      </a>
+                                </div>
+                                
+                            </a>
+                        </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="as_service_box text-center">
+                            <span class="as_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+                                  <polygon points="35,5 66.5,27.5 66.5,52.5 35,75 3.5,52.5 3.5,27.5" class="cls-1" stroke="currentColor" fill="none" stroke-width="2"/>
+                                  <polygon points="35,5 50.75,45 19.25,45" class="cls-1" stroke="currentColor" fill="none" stroke-width="2"/>
+                                  <polygon points="19.25,45 35,75 3.5,52.5" class="cls-1" stroke="currentColor" fill="none" stroke-width="2"/>
+                                  <polygon points="50.75,45 66.5,52.5 35,75" class="cls-1" stroke="currentColor" fill="none" stroke-width="2"/>
+                                  <polygon points="19.25,45 50.75,45 35,75" class="cls-1" stroke="currentColor" fill="none" stroke-width="2"/>
+                                  
+                                  <!-- Text inside the die -->
+                                  <text x="32" y="28" font-size="6" fill="currentColor"stroke-width="2">20</text>
+                                  <text x="44" y="42" font-size="6" fill="currentColor"stroke-width="2">5</text>
+                                  <text x="22" y="42" font-size="6" fill="currentColor"stroke-width="2">+</text>
+                                  <text x="31" y="61" font-size="6" fill="currentColor"stroke-width="2">11</text>
+                                </svg>
+                              </span>
+                              
+                              
+
+                            <h4 class="as_subheading">Personal Numerology Readings</h4>
+                            <p class="as_paddingBottom10"></p>
+                         
+                               
+                                <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+<button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>                                           
+                                    <a href="contact.html">
+                                        <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                      </a>
+                                </div>
+                                
+                            </a>
+                        </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="as_service_box text-center">
+                            <span class="as_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="70" viewBox="0 0 120 120">
+                                  <!-- Single Card with Star -->
+                                  <rect x="20" y="20" width="80" height="80" class="cls-1" stroke="currentColor" fill="none" stroke-width="4" rx="10" ry="10"/>
+                                  <polygon points="60,30 65,50 85,50 70,60 75,80 60,70 45,80 50,60 35,50 55,50" class="cls-1" stroke="currentColor" fill="none" stroke-width="4"/>
+                                  <!-- <circle cx="60" cy="60" r="5" class="cls-1" fill="currentColor"/> -->
+                                </svg>
+                              </span>
+                              
+                              
+                                                         
+                              
+
+                            <h4 class="as_subheading">Reveal Mysteries Through Cards</h4>
+                            <p class="as_paddingBottom10"></p>
+                         
+                               
+                                <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+<button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>                                           
+                                    <a href="contact.html">
+                                        <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                      </a>
+                                </div>
+                                
+                            </a>
+                        </div>
+                      
+                    </div>
+
+<!-- --------------------------------------------------- -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="as_service_box text-center">
+<span class="as_icon">
+    <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink " preserveAspectRatio="xMidYMid" width="58" height="69" viewBox="0 0 58 69"> <path d="M30.362,67.641 C30.362,68.390 29.757,69.000 29.012,69.000 C28.269,69.000 27.663,68.390 27.663,67.641 C27.663,66.893 28.269,66.283 29.012,66.283 C29.757,66.283 30.362,66.893 30.362,67.641 ZM0.674,67.641 L0.674,65.923 C0.674,56.868 6.774,51.929 9.444,50.317 C13.072,48.129 16.968,46.474 21.042,45.387 L21.042,43.200 C20.363,42.596 19.742,41.910 19.193,41.144 C17.577,38.891 16.259,36.449 15.265,33.869 C14.355,33.744 13.524,33.161 13.096,32.249 C12.688,31.380 9.860,26.112 9.427,25.174 C8.328,22.797 9.764,20.448 11.584,19.693 C11.887,19.566 12.199,19.473 12.516,19.420 C12.221,18.206 12.072,16.957 12.072,15.688 C12.072,7.038 19.061,-0.000 27.651,-0.000 C29.161,-0.000 30.591,0.581 31.677,1.637 C31.688,1.648 31.707,1.648 31.718,1.637 C32.805,0.581 34.235,-0.000 35.744,-0.000 C41.583,-0.000 46.333,4.783 46.333,10.662 L46.333,13.136 C46.333,15.266 46.042,17.362 45.469,19.394 C45.793,19.447 46.116,19.533 46.423,19.672 C48.662,20.693 49.537,23.217 48.580,25.154 C48.123,26.080 45.319,31.360 44.911,32.229 C44.483,33.140 43.652,33.724 42.743,33.849 C41.749,36.434 40.428,38.883 38.809,41.141 C38.260,41.908 37.638,42.595 36.958,43.200 L36.958,45.387 C41.032,46.474 44.928,48.129 48.555,50.316 C51.226,51.929 57.326,56.867 57.326,65.923 L57.326,67.641 C57.326,68.391 56.722,69.000 55.977,69.000 L35.084,69.000 C35.083,69.000 35.083,69.000 35.082,69.000 C34.309,69.000 33.685,68.341 33.736,67.550 C33.783,66.829 34.411,66.283 35.129,66.283 L54.628,66.283 C54.628,60.548 51.770,55.424 47.167,52.647 C43.919,50.687 40.439,49.180 36.804,48.159 C36.077,51.828 32.854,54.602 29.000,54.602 C25.146,54.602 21.923,51.828 21.196,48.159 C17.562,49.180 14.081,50.687 10.832,52.647 C6.230,55.424 3.372,60.390 3.372,66.283 L22.944,66.283 C23.718,66.283 24.341,66.945 24.288,67.736 C24.239,68.456 23.612,69.000 22.895,69.000 L2.023,69.000 C1.278,69.000 0.674,68.391 0.674,67.641 L0.674,67.641 ZM14.775,15.896 C14.899,15.749 16.760,13.446 19.964,13.446 C21.561,13.446 23.096,14.007 24.311,15.007 C25.431,15.928 26.857,16.435 28.326,16.435 C31.802,16.435 34.587,13.619 34.665,10.025 C34.682,9.287 35.280,8.697 36.014,8.697 C36.747,8.696 37.346,9.286 37.362,10.025 C37.401,11.759 38.328,13.263 39.782,13.949 C41.212,14.625 42.409,15.647 43.286,16.898 C43.518,15.663 43.635,14.406 43.635,13.136 L43.635,10.662 C43.635,6.281 40.095,2.716 35.744,2.716 C34.937,2.716 34.173,3.027 33.592,3.592 C32.530,4.624 30.866,4.624 29.803,3.592 C29.223,3.027 28.458,2.716 27.651,2.716 C20.548,2.716 14.707,8.460 14.775,15.896 ZM34.260,45.009 C31.067,46.527 27.377,46.702 23.740,45.010 L23.740,46.588 C23.740,49.509 26.099,51.886 29.000,51.886 C31.901,51.886 34.260,49.509 34.260,46.588 L34.260,45.009 ZM36.622,39.552 C38.295,37.218 39.622,34.663 40.561,31.956 C40.726,31.481 41.353,30.763 42.414,31.183 C42.915,30.110 45.733,24.863 46.141,23.993 C46.452,23.331 46.076,22.469 45.369,22.173 C44.969,22.005 44.527,22.035 44.139,22.235 C43.302,22.665 42.266,22.157 42.160,21.225 C41.917,19.110 40.555,17.315 38.637,16.409 C37.667,15.951 36.840,15.280 36.195,14.457 C35.789,15.192 35.263,15.854 34.684,16.482 C32.124,19.261 26.772,20.496 22.605,17.111 C20.979,15.790 18.562,15.870 17.070,17.394 C16.259,18.222 15.781,19.342 15.781,20.485 L15.781,21.019 C15.786,22.017 14.733,22.683 13.827,22.234 C13.452,22.047 13.024,22.039 12.638,22.193 C12.026,22.438 11.504,23.235 11.866,24.014 C12.270,24.885 15.150,30.211 15.577,31.183 C16.765,30.767 17.322,31.621 17.445,31.976 C18.386,34.676 19.710,37.226 21.380,39.555 C23.176,42.059 25.953,43.496 29.000,43.495 C32.047,43.495 34.825,42.058 36.622,39.552 L36.622,39.552 ZM58.000,8.149 L58.000,1.358 C58.000,0.608 57.396,-0.000 56.651,-0.000 L49.907,-0.000 C49.162,-0.000 48.558,0.608 48.558,1.358 C48.558,2.108 49.162,2.716 49.907,2.716 L55.302,2.716 L55.302,8.149 C55.302,8.899 55.906,9.508 56.651,9.508 C57.396,9.508 58.000,8.899 58.000,8.149 ZM58.000,45.230 L58.000,38.439 C58.000,37.689 57.396,37.081 56.651,37.081 C55.906,37.081 55.302,37.689 55.302,38.439 L55.302,43.872 L49.907,43.872 C49.162,43.872 48.558,44.480 48.558,45.230 C48.558,45.980 49.162,46.588 49.907,46.588 L56.651,46.588 C57.396,46.588 58.000,45.980 58.000,45.230 ZM2.698,8.149 L2.698,2.716 L8.093,2.716 C8.838,2.716 9.442,2.108 9.442,1.358 C9.442,0.608 8.838,-0.000 8.093,-0.000 L1.349,-0.000 C0.604,-0.000 0.000,0.608 0.000,1.358 L0.000,8.149 C0.000,8.899 0.604,9.508 1.349,9.508 C2.094,9.508 2.698,8.899 2.698,8.149 ZM9.442,45.230 C9.442,44.480 8.838,43.872 8.093,43.872 L2.698,43.872 L2.698,38.439 C2.698,37.689 2.094,37.081 1.349,37.081 C0.604,37.081 0.000,37.689 0.000,38.439 L0.000,45.230 C0.000,45.980 0.604,46.588 1.349,46.588 L8.093,46.588 C8.838,46.588 9.442,45.980 9.442,45.230 Z" class="cls-1"/> </svg>                         
+ </span>
+<h4 class="as_subheading">Face Reading: Discover Your True Self </h4>
+<p class="as_paddingBottom10"></p>
+
+    <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+        <button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>
+        <a href="contact.html">
+            <button class="btn btncolor me-md-2" type="button">Offline</button>
+          </a>
+    </div>
+    </div>
+</div>
+<!-- --------------------------------------------------- -->
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="as_service_box text-center">
+                            <span class="as_icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="70" height="70" viewBox="0 0 70 70"> <path d="M70.000,67.742 L70.000,70.000 L-0.000,70.000 L-0.000,67.742 L10.161,67.742 L10.161,49.677 L7.903,49.677 L7.903,42.903 L12.419,42.903 L12.419,38.684 C12.419,36.677 13.766,34.891 15.695,34.341 L20.322,33.021 L20.322,31.003 C18.941,29.761 18.064,27.967 18.064,25.967 L18.064,23.710 C18.064,19.973 21.103,16.935 24.839,16.935 C28.575,16.935 31.613,19.973 31.613,23.710 L31.613,25.967 C31.613,27.968 30.737,29.762 29.355,31.003 L29.355,33.020 L33.983,34.341 C35.814,34.864 37.107,36.505 37.233,38.387 L43.565,38.387 L49.624,32.327 C47.025,31.379 45.161,28.890 45.161,25.967 L45.161,23.710 C45.161,19.973 48.199,16.935 51.935,16.935 C55.671,16.935 58.710,19.973 58.710,23.710 L58.710,25.967 C58.710,27.939 57.858,29.710 56.510,30.949 C57.866,31.656 58.710,33.034 58.710,34.569 L58.710,36.129 L63.226,36.129 L63.226,50.806 C63.226,54.742 60.330,58.006 56.560,58.602 L57.473,67.742 L70.000,67.742 ZM52.957,67.742 L55.204,67.742 L54.301,58.709 L52.054,58.709 L52.957,67.742 ZM44.032,67.742 L50.688,67.742 L49.785,58.709 L44.032,58.709 L44.032,67.742 ZM36.560,67.742 L35.431,65.484 L18.762,65.484 L17.633,67.742 L36.560,67.742 ZM12.419,51.935 L15.806,51.935 L15.806,54.193 L12.419,54.193 L12.419,67.742 L15.108,67.742 L17.366,63.225 L36.827,63.225 L39.085,67.742 L41.774,67.742 L41.774,54.193 L18.064,54.193 L18.064,51.935 L41.774,51.935 L41.774,49.677 L12.419,49.677 L12.419,51.935 ZM10.161,45.161 L10.161,47.419 L45.161,47.419 L45.161,45.161 L10.161,45.161 ZM29.355,23.710 C29.355,21.219 27.329,19.193 24.839,19.193 C22.348,19.193 20.322,21.219 20.322,23.710 L20.322,25.967 C20.322,28.458 22.348,30.484 24.839,30.484 C27.329,30.484 29.355,28.458 29.355,25.967 L29.355,23.710 ZM22.581,32.347 L22.581,33.559 C22.861,33.991 23.639,35.000 24.839,35.000 C26.039,35.000 26.817,33.991 27.097,33.559 L27.097,32.347 C26.389,32.597 25.631,32.742 24.839,32.742 C24.046,32.742 23.288,32.597 22.581,32.347 ZM33.363,36.512 L28.711,35.183 C28.057,36.037 26.782,37.258 24.839,37.258 C22.895,37.258 21.621,36.037 20.966,35.184 L16.315,36.513 C15.352,36.788 14.677,37.680 14.677,38.684 L14.677,42.902 L30.692,42.902 C30.565,42.547 30.484,42.170 30.484,41.773 C30.484,39.906 32.004,38.386 33.871,38.386 L34.951,38.386 C34.831,37.511 34.228,36.759 33.363,36.512 ZM44.500,40.645 L33.871,40.645 C33.248,40.645 32.742,41.151 32.742,41.774 C32.742,42.397 33.248,42.903 33.871,42.903 L45.823,42.903 L53.823,34.903 C54.059,34.667 54.193,34.341 54.193,34.008 C54.193,33.309 53.626,32.742 52.928,32.742 C52.595,32.742 52.268,32.876 52.032,33.112 L44.500,40.645 ZM56.452,23.710 C56.452,21.219 54.426,19.193 51.935,19.193 C49.445,19.193 47.419,21.219 47.419,23.710 L47.419,25.967 C47.419,28.458 49.445,30.484 51.935,30.484 C54.426,30.484 56.452,28.458 56.452,25.967 L56.452,23.710 ZM56.452,34.569 C56.452,34.487 56.429,34.413 56.419,34.334 C56.342,35.144 55.998,35.921 55.420,36.499 L47.419,44.500 L47.419,49.677 L44.032,49.677 L44.032,51.935 L53.064,51.935 C54.932,51.935 56.452,50.416 56.452,48.548 L56.452,34.569 ZM60.968,50.806 L60.968,38.387 L58.710,38.387 L58.710,48.548 C58.710,51.661 56.177,54.193 53.064,54.193 L44.032,54.193 L44.032,56.451 L55.323,56.451 C58.435,56.451 60.968,53.919 60.968,50.806 ZM35.000,18.216 L35.000,11.290 L27.097,11.290 L27.097,-0.000 L54.193,-0.000 L54.193,11.290 L43.312,11.290 L35.000,18.216 ZM51.935,2.258 L29.355,2.258 L29.355,9.032 L37.258,9.032 L37.258,13.396 L42.495,9.032 L51.935,9.032 L51.935,2.258 ZM36.129,4.516 L45.161,4.516 L45.161,6.774 L36.129,6.774 L36.129,4.516 ZM49.677,6.774 L47.419,6.774 L47.419,4.516 L49.677,4.516 L49.677,6.774 ZM31.613,4.516 L33.871,4.516 L33.871,6.774 L31.613,6.774 L31.613,4.516 Z" class="cls-1"/> </svg>                                 
+                            </span>
+
+                            <h4 class="as_subheading">Your Hands Hold the Key: Discover Your Life’s Purpose</h4>
+                            <p class="as_paddingBottom10"></p>
+                           
+                                <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>
+                                    <a href="contact.html">
+                                        <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                      </a>
+                                </div>
+                                
+                              
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="as_service_box text-center">
+                            <span class="as_icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="70" height="70" viewBox="0 0 70 70"> <path style="fill:#f88526;" d="M51.887,17.092c-0.348-1.72-1.467-3.783-3.499-4.234c-1.313-1.885-2.932-3.015-4.817-3.358
+                                c-2.313-0.426-4.399,0.467-5.477,1.062c-0.933-1.207-3.128-3.456-6.573-3.456c-2.419,0-4.606,1.008-6.153,2.842
+                                c-1.351,1.599-2.029,3.621-1.862,5.498c-1.999,1.96-2.834,3.93-2.486,5.862c0.382,2.104,2.112,3.626,3.51,4.536
+                                c-0.423,0.632-0.689,1.594-0.81,2.904c-0.139,1.498,0.477,2.388,1.016,2.87c1.393,1.246,3.809,1.202,5.204,1.047
+                                c0.013,1.679,0.031,3.337,0.041,3.484c0.018,0.232,0.129,0.446,0.307,0.596c0.157,0.134,0.358,0.206,0.565,0.206
+                                c0.026,0,0.049,0,0.072-0.003l2.223-0.183c0.245-0.021,0.469-0.139,0.619-0.333l2.976-3.809c0.088-0.113,0.147-0.248,0.17-0.387
+                                c0.015-0.083,0.09-0.557,0.005-1.251c1.779,0.369,4.443,0.529,6.277-0.413c2.318-1.186,3.389-3.657,3.757-4.729
+                                c0.97-0.284,2.991-1.039,3.77-2.558c0.304-0.601,0.387-1.256,0.24-1.926C51.884,20.455,52.245,18.866,51.887,17.092z
+                                 M49.52,20.274c-0.395,0.217-0.56,0.699-0.379,1.114c0.24,0.552,0.126,0.892,0.021,1.099c-0.415,0.815-1.769,1.385-2.607,1.648
+                                c-0.196,0.062-0.364,0.106-0.485,0.134c-0.32,0.07-0.575,0.32-0.658,0.637c0,0.008-0.044,0.168-0.134,0.423
+                                c-0.307,0.861-1.163,2.808-2.881,3.69c-1.978,1.013-5.655,0.263-6.305-0.09c-0.328-0.181-0.732-0.132-1.008,0.119
+                                c-0.276,0.25-0.364,0.65-0.217,0.993c0.322,0.753,0.348,1.403,0.335,1.71l-2.579,3.303l-0.91,0.075
+                                c-0.01-0.946-0.023-2.437-0.031-3.484c0-0.263-0.121-0.511-0.325-0.673c-0.157-0.129-0.351-0.196-0.549-0.196
+                                c-0.059,0-0.119,0.005-0.178,0.018c-0.885,0.181-3.654,0.482-4.729-0.48c-0.227-0.201-0.516-0.567-0.438-1.405
+                                c0.155-1.697,0.529-2.122,0.609-2.2c0.188,0.088,0.307,0.137,0.335,0.15c0.077,0.031,0.157,0.052,0.237,0.059h0.01
+                                c0.33,0.034,0.663-0.126,0.838-0.428c0.219-0.374,0.132-0.854-0.209-1.127c-0.072-0.059-0.155-0.116-0.248-0.165
+                                c-0.132-0.075-0.281-0.137-0.444-0.183c-1.044-0.526-3.479-1.955-3.85-4.023c-0.235-1.3,0.407-2.718,1.908-4.216
+                                c0.119-0.119,0.242-0.24,0.371-0.358c0.217-0.199,0.32-0.495,0.271-0.787c-0.028-0.165-0.046-0.333-0.054-0.503
+                                c-0.07-1.362,0.469-2.87,1.465-4.049c1.212-1.431,2.922-2.22,4.817-2.22c3.585,0,5.55,3.293,5.568,3.324
+                                c0.124,0.214,0.335,0.366,0.578,0.418c0.245,0.052,0.498-0.003,0.699-0.15c0.023-0.015,2.37-1.694,4.905-1.227
+                                c1.289,0.237,2.434,1.001,3.414,2.272c0.157,0.201,0.309,0.415,0.456,0.642c0.142,0.222,0.379,0.366,0.642,0.395
+                                c0.108,0.01,0.211,0.031,0.312,0.062c1.099,0.309,1.828,1.607,2.079,2.844C50.438,18.75,50.17,19.916,49.52,20.274z"/>
+                            <path style="fill:#f88526;" d="M50.172,17.438c-0.25-1.238-0.98-2.535-2.079-2.844c-0.663,0.534-2.267,2.019-1.929,3.61
+                                l-1.712,0.361c-0.482-2.285,1.22-4.178,2.231-5.07c-0.98-1.271-2.125-2.035-3.414-2.272c-2.535-0.467-4.882,1.212-4.905,1.227
+                                c-0.201,0.147-0.454,0.201-0.699,0.15c-0.242-0.052-0.454-0.204-0.578-0.418c-0.018-0.031-1.983-3.324-5.568-3.324
+                                c-1.895,0-3.605,0.789-4.817,2.22c-0.995,1.179-1.534,2.687-1.465,4.049c3.706,1.163,4.719-0.949,4.729-0.972l1.594,0.722
+                                c-0.015,0.031-1.114,2.349-4.296,2.349c-0.75,0-1.619-0.129-2.615-0.451c-1.501,1.498-2.143,2.917-1.908,4.216
+                                c0.371,2.068,2.806,3.497,3.85,4.023c0.162,0.046,0.312,0.108,0.444,0.183c2.264,0.175,2.602-0.946,2.605-0.957l1.699,0.41
+                                c-0.023,0.103-0.598,2.316-3.832,2.316c-0.266,0-0.549-0.015-0.854-0.049h-0.01c-0.08-0.008-0.16-0.028-0.237-0.059
+                                c-0.028-0.013-0.147-0.062-0.335-0.15c-0.08,0.077-0.454,0.503-0.609,2.2c-0.077,0.838,0.211,1.204,0.438,1.405
+                                c1.075,0.962,3.845,0.66,4.729,0.48c0.059-0.013,0.119-0.018,0.178-0.018c0.199,0,0.392,0.067,0.549,0.196
+                                c0.204,0.162,0.325,0.41,0.325,0.673c0.008,1.047,0.021,2.538,0.031,3.484l0.91-0.075l2.579-3.303
+                                c0.013-0.307-0.013-0.957-0.335-1.71c-0.147-0.343-0.059-0.743,0.217-0.993c0.276-0.25,0.681-0.299,1.008-0.119
+                                c0.65,0.353,4.327,1.104,6.305,0.09c1.717-0.882,2.574-2.829,2.881-3.69c-0.735-0.789-1.449-1.158-2.13-1.111
+                                c-1.111,0.085-2.068,1.313-2.342,1.779l-1.514-0.879c0.059-0.101,1.454-2.463,3.711-2.646c1.246-0.095,2.434,0.462,3.551,1.663
+                                c0.838-0.263,2.192-0.833,2.607-1.648c0.106-0.206,0.219-0.547-0.021-1.099c-0.181-0.415-0.015-0.897,0.379-1.114
+                                C50.17,19.916,50.438,18.75,50.172,17.438z M40.716,19.988h-3.721v3.724h-1.751v-3.724H31.52V18.24h3.724v-3.724h1.751v3.724
+                                h3.721V19.988z"/>
+                            <rect x="35.244" y="14.516" style="fill:#f88526;" width="1.751" height="9.196"/>
+                            <rect x="31.52" y="18.24" style="fill:#f88526;" width="9.196" height="1.748"/>
+                            <path style="fill:#f88526;" d="M31.561,14.877c-0.015,0.031-1.114,2.349-4.296,2.349c-0.75,0-1.619-0.129-2.615-0.451
+                                c-0.173-0.054-0.348-0.113-0.526-0.181l0.609-1.64c0.173,0.064,0.343,0.121,0.505,0.173c3.706,1.163,4.719-0.949,4.729-0.972
+                                L31.561,14.877z"/>
+                            <path style="fill:#f88526;" d="M46.936,24.568l-1.354,1.109c-0.103-0.124-0.204-0.24-0.304-0.348
+                                c-0.735-0.789-1.449-1.158-2.13-1.111c-1.111,0.085-2.068,1.313-2.342,1.779l-1.514-0.879c0.059-0.101,1.454-2.463,3.711-2.646
+                                c1.246-0.095,2.434,0.462,3.551,1.663C46.686,24.271,46.809,24.416,46.936,24.568z"/>
+                            <path style="fill:#f88526;" d="M31.339,24.65c-0.023,0.103-0.598,2.316-3.832,2.316c-0.266,0-0.549-0.015-0.854-0.049h-0.01
+                                l0.188-1.741c0.07,0.008,0.137,0.013,0.204,0.021c2.264,0.175,2.602-0.946,2.605-0.957L31.339,24.65z"/>
+                            <path style="fill:#f88526;" d="M48.37,14.382c0,0,0,0-0.003,0c-0.013,0.01-0.116,0.085-0.273,0.211
+                                c-0.663,0.534-2.267,2.019-1.929,3.61l-1.712,0.361c-0.482-2.285,1.22-4.178,2.231-5.07c0.376-0.335,0.658-0.529,0.696-0.557
+                                l0.658,0.962L48.37,14.382z"/>
+                            <path style="fill:#f88526;" d="M19.006,38.076c-2.249-3.728-5.047-8.369-5.047-15.569c0-0.081,0.006-0.161,0.006-0.242
+                                c-0.567,0.175-1.155,0.297-1.753,0.391c0.038,7.599,2.95,12.435,5.296,16.324c1.493,2.476,2.673,4.431,2.673,6.38l0.096,18.561
+                                l1.75-0.009L21.93,45.355C21.93,42.924,20.575,40.677,19.006,38.076z"/>
+                            <path style="fill:#f88526;" d="M62.302,32.496c-1.595-1.977-3.779-4.684-3.859-12.868c0-12.554-7.46-19.189-21.574-19.189
+                                c-5.878,0-11.148,1.663-15.295,4.513c0.257,0.543,0.486,1.101,0.664,1.683c3.914-2.803,8.97-4.446,14.632-4.446
+                                c13.154,0,19.824,5.867,19.824,17.448c0.086,8.801,2.59,11.905,4.247,13.959c0.885,1.096,1.31,1.663,1.31,2.553
+                                c0,1.562-0.636,1.622-1.903,1.74c-0.884,0.083-2.532,0.237-2.532,2.015c0,0.343,0.072,0.94,0.149,1.572
+                                c0.063,0.523,0.135,1.116,0.134,1.375c-0.039,0.068-0.282,0.203-0.412,0.275c-0.412,0.227-1.101,0.607-1.101,1.454
+                                c0,0.499,0.353,0.777,0.664,1.023c0.152,0.12,0.613,0.484,0.613,0.652c0,0.171-0.333,0.357-0.803,0.6
+                                c-0.686,0.356-1.723,0.893-1.723,2.114c0,0.317,0.157,0.517,0.283,0.677c0.235,0.3,0.86,1.094,0.86,2.2
+                                c0,1.853-1.194,2.502-1.334,2.533l-6.685-0.011c-5.864,0-5.949,4.373-6.016,7.887c-0.01,0.538-0.021,1.08-0.048,1.616l1.748,0.089
+                                c0.028-0.555,0.039-1.115,0.05-1.671c0.079-4.055,0.304-6.171,4.265-6.171l6.685,0.011c1.077,0,3.085-1.471,3.085-4.283
+                                c0-1.401-0.623-2.448-1.044-3.029c0.148-0.132,0.435-0.281,0.679-0.408c0.696-0.361,1.748-0.906,1.748-2.154
+                                c0-0.763-0.469-1.323-0.891-1.704c0.473-0.276,1.128-0.759,1.128-1.726c0-0.338-0.072-0.932-0.148-1.56
+                                c-0.064-0.527-0.136-1.125-0.136-1.362c0-0.066,0.007-0.102,0.004-0.109c0.133-0.088,0.636-0.135,0.94-0.164
+                                c1.22-0.114,3.49-0.326,3.49-3.483C64,34.6,63.213,33.625,62.302,32.496z"/>
+                            <path style="fill:#f88526;" d="M10.258,20.556C4.602,20.556,0,15.954,0,10.298C0,4.641,4.602,0.039,10.258,0.039
+                                s10.258,4.602,10.258,10.258C20.516,15.954,15.914,20.556,10.258,20.556z M10.258,1.789c-4.691,0-8.508,3.817-8.508,8.508
+                                s3.816,8.508,8.508,8.508s8.508-3.816,8.508-8.508S14.95,1.789,10.258,1.789z"/> </svg>                                 
+                            </span>
+
+
+
+
+                            
+                            <h4 class="as_subheading">Psychosomatic Disorder Healing</h4>
+                            <p class="as_paddingBottom10"></p>
+                        
+                                <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>
+                                    <a href="contact.html">
+                                        <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                      </a>
+                                </div>
+                                
+                                <span>
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"> <path class="cls-1" d="M8.966,4.52H1.312A1.644,1.644,0,0,1,.976,4.5,0.656,0.656,0,0,1,.447,3.8a0.672,0.672,0,0,1,.7-0.575q2.824,0,5.649,0c0.7,0,1.4,0,2.13-.051C8.546,2.814,8.166,2.455,7.782,2.1A0.675,0.675,0,0,1,7.523,1.5,0.629,0.629,0,0,1,7.981.959a0.688,0.688,0,0,1,.726.187L10.429,2.8l0.58,0.557a0.637,0.637,0,0,1,.011,1.016q-1.149,1.109-2.3,2.212a0.7,0.7,0,0,1-1.006.036A0.635,0.635,0,0,1,7.77,5.658C8.151,5.294,8.533,4.932,8.966,4.52Z"/> </svg> -->
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="as_service_box text-center">
+                            <span class="as_icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="70" height="70" viewBox="0 0 70 70"><path style="fill:#f88526;" d="M59.315,34.749c0,3.393-2.435,3.621-3.745,3.745c-0.304,0.027-0.748,0.068-0.919,0.142
+                                c0.003,0.015,0,0.035,0,0.062c0,0.245,0.08,0.898,0.142,1.422c0.086,0.692,0.157,1.289,0.157,1.652
+                                c0,0.996-0.63,1.519-1.132,1.827c0.434,0.411,0.884,0.993,0.884,1.779c0,1.363-1.132,1.951-1.883,2.338
+                                c-0.18,0.095-0.47,0.245-0.641,0.369c0.446,0.63,1.07,1.723,1.07,3.171c0,3.056-2.134,4.59-3.328,4.59l-7.031-0.012
+                                c-4.088,0-4.321,2.196-4.401,6.408c-0.012,0.585-0.024,1.176-0.053,1.759l-2.004-0.1c0.03-0.565,0.038-1.132,0.05-1.696
+                                c0.071-3.733,0.163-8.376,6.411-8.376l7.028,0.012c0.157-0.041,1.321-0.715,1.321-2.583c0-1.132-0.644-1.951-0.887-2.261
+                                c-0.139-0.177-0.316-0.402-0.316-0.763c0-1.333,1.117-1.912,1.856-2.296c0.319-0.166,0.801-0.414,0.801-0.559
+                                c-0.024-0.157-0.467-0.505-0.612-0.621c-0.343-0.272-0.73-0.576-0.73-1.141c0-0.94,0.78-1.371,1.2-1.602
+                                c0.133-0.074,0.358-0.198,0.405-0.263c-0.015-0.222-0.092-0.869-0.154-1.389c-0.083-0.668-0.157-1.297-0.157-1.664
+                                c0-1.945,1.779-2.113,2.737-2.202c1.321-0.124,1.924-0.18,1.924-1.747c0-1.031-0.73-1.927-1.744-3.165
+                                c-1.569-1.912-3.609-4.404-4.055-8.979c-0.065-0.627-0.098-1.295-0.092-2.004c0.003-0.449,0.018-0.916,0.05-1.401l1.008-0.068
+                                l-1.002-0.056c0.355-6.127-3.266-11.873-9.009-14.299c-3.718-1.572-7.56-2.471-11.249-2.713c-0.677-0.047-1.345-0.071-2.007-0.071
+                                c-5.636-0.006-10.779,1.563-14.385,4.637C9.023,11.571,7.359,17.612,6.883,20.6c-0.183,1.141-0.192,1.835-0.192,1.862
+                                c0,0.047,0,0.095,0.003,0.142c0.035,7.416,2.926,11.5,5.252,14.79c1.679,2.37,3.127,4.416,3.127,7.037l0.101,19.513l-2.004,0.012
+                                l-0.101-19.519c0-1.989-1.218-3.709-2.76-5.885c-2.506-3.541-5.624-7.948-5.624-16.093c0-0.402,0.1-9.91,8.837-17.358
+                                c6.916-5.893,18.863-6.765,29.724-2.172c6.523,2.758,10.634,9.292,10.232,16.262c0,0-0.009,0.139-0.009,0.142
+                                c-0.399,6.041,1.844,8.781,3.647,10.98C58.246,31.696,59.315,32.999,59.315,34.749z"/>
+                            <path style="fill:#f1720a;" d="M52.742,20.6v2.004h-8.394c-0.556,0-1.005-0.449-1.005-1.002c0-1.862-1.513-3.378-3.375-3.378
+                                c-1.862,0-3.378,1.516-3.378,3.378c0,0.502-0.369,0.916-0.851,0.99c-0.047,0.009-0.1,0.012-0.151,0.012h-5.376
+                                c-0.553,0-1.002-0.449-1.002-1.002v-3.307c-2.492-0.47-4.38-2.657-4.38-5.276c0-2.628,1.889-4.821,4.38-5.29V1.563h2.007v7.076
+                                c0,0.553-0.449,1.002-1.005,1.002c-1.862,0-3.375,1.516-3.375,3.378c0,1.853,1.513,3.363,3.375,3.363
+                                c0.508,0,0.925,0.375,0.993,0.863c0.009,0.047,0.012,0.095,0.012,0.142V20.6h3.461c0.473-2.492,2.666-4.38,5.29-4.38
+                                c2.625,0,4.818,1.889,5.288,4.38H52.742z"/>
+                            <rect x="29.249" y="0.994" style="fill:#f88526;" width="2.006" height="0.267"/>
+                            <rect x="29.21" y="21.602" style="fill:#f88526;" width="2.006" height="7.87"/>
+                            <path style="fill:#f88526;" d="M31.216,44.204H29.21v-6.125c0-0.554,0.449-1.003,1.003-1.003c1.862,0,3.377-1.515,3.377-3.377
+                                c0-1.862-1.515-3.377-3.377-3.377c-0.554,0-1.003-0.449-1.003-1.003v-7.717h2.006v6.808c2.491,0.471,4.38,2.664,4.38,5.289
+                                s-1.889,4.818-4.38,5.289V44.204z"/>
+                            <path style="fill:#f7b077;" d="M52.476,19.131l-1.008,0.068c-0.033,0.485-0.047,0.952-0.05,1.401h-6.162
+                                c-0.47-2.492-2.663-4.38-5.288-4.38c-2.625,0-4.818,1.889-5.29,4.38h-3.461v-3.355h-0.012c-0.068-0.488-0.485-0.863-0.993-0.863
+                                c-1.862,0-3.375-1.51-3.375-3.363c0-1.862,1.513-3.378,3.375-3.378c0.556,0,1.005-0.449,1.005-1.002V2.063
+                                c3.689,0.242,7.531,1.141,11.249,2.713c5.743,2.427,9.363,8.172,9.009,14.299L52.476,19.131z"/>
+                            <rect x="29.21" y="17.246" style="fill:#f88526;" width="2.007" height="0.142"/>
+                            <rect x="24.685" y="20.6" style="fill:#f88526;" width="5.527" height="2.004"/>
+                            <path style="fill:#f7b077;" d="M24.83,13.019c0,2.619,1.889,4.806,4.38,5.276V20.6h-4.525v0.012
+                                c-0.488,0.068-0.863,0.485-0.863,0.99c0,1.862-1.51,3.378-3.363,3.378c-1.862,0-3.378-1.516-3.378-3.378
+                                c0-0.553-0.449-1.002-1.002-1.002H6.883c0.476-2.988,2.14-9.029,7.942-13.971c3.606-3.074,8.748-4.643,14.385-4.637v5.737
+                                C26.718,8.199,24.83,10.392,24.83,13.019z"/>
+                            <path style="fill:#f88526;" d="M30.212,20.6v2.004h-4.478c-0.47,2.492-2.657,4.38-5.276,4.38c-2.627,0-4.818-1.889-5.29-4.38
+                                H5.787V20.6h10.291c0.553,0,1.002,0.449,1.002,1.002c0,1.862,1.516,3.378,3.378,3.378c1.853,0,3.363-1.516,3.363-3.378
+                                c0-0.505,0.375-0.922,0.863-0.99c0.047-0.009,0.095-0.012,0.142-0.012H30.212z"/>
+                            <rect x="35.588" y="20.599" style="fill:#f88526;" width="0.152" height="2.006"/></svg>                                 
+                            </span>
+
+                            <h4 class="as_subheading">Psychological Disorder Healing</h4>
+                            <p class="as_paddingBottom10"></p>
+                            <!-- <a href="service_single.html" class="as_link"> -->
+                                <div class="d-grid mt-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btncolor me-md-2" type="button" onclick="window.open('https://calendly.com/aicmt88/book-an-appointment', '_blank')">Online</button>
+                                    <a href="contact.html">
+                                        <button class="btn btncolor me-md-2" type="button">Offline</button>
+                                      </a>
+                                </div>
+                                
+                                <span>
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"> <path class="cls-1" d="M8.966,4.52H1.312A1.644,1.644,0,0,1,.976,4.5,0.656,0.656,0,0,1,.447,3.8a0.672,0.672,0,0,1,.7-0.575q2.824,0,5.649,0c0.7,0,1.4,0,2.13-.051C8.546,2.814,8.166,2.455,7.782,2.1A0.675,0.675,0,0,1,7.523,1.5,0.629,0.629,0,0,1,7.981.959a0.688,0.688,0,0,1,.726.187L10.429,2.8l0.58,0.557a0.637,0.637,0,0,1,.011,1.016q-1.149,1.109-2.3,2.212a0.7,0.7,0,0,1-1.006.036A0.635,0.635,0,0,1,7.77,5.658C8.151,5.294,8.533,4.932,8.966,4.52Z"/> </svg> -->
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+           </div>
+        </div>
+
+<!-- courses -->
+<section>
+    <div class="course-intro">
+        <h1>Courses We Provide</h1>
+        <p>Explore our comprehensive courses to enhance your knowledge in Astrology and Numerology.</p>
+    </div>
+    <div class="courses">
+        <div class="card">
+            <h3>Basic Numerology Course</h3>
+            <ul>
+                <li>● About 1 to 9 Numbers</li>
+                <li>● Significance of 9 Numbers</li>
+                <li> ●Yogas of 9 Numbers</li>
+            </ul>
+            <p class="Price">₹2,100/-</p>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+        <div class="card">
+            <h3>Advance Numerology Course</h3>
+            <ul>
+                <li>● Dasha, Year, Month, and Day Calculations</li>
+                <li>● Health, Wealth, Marriage, Property</li>
+                <li>● All events of life with live examples</li>
+            </ul>
+            <p class="Price">₹11,000/-</p>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+        <div class="card">
+            <h3>Basic Astrology Course</h3>
+            <ul>
+                <li>● 9 Planets</li>
+                <li>● 12 Signs</li>
+                <li>● 12 Houses</li>
+                <li>● Significance of Houses, Planets, and Signs</li>
+            </ul>
+            <p class="Price">₹2,100/-</p>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+        <div class="card">
+            <h3>Advance Astrology Course</h3>
+            <ul>
+                <li>● Prediction of life events using Dasha, Bhukti, Antar, Houses, and Planets</li>
+                <li>● Events like Health, Wealth, Marriage, Childbirth, Longevity, Property purchase and sale, etc.</li>
+            </ul>
+            <p class="Price">₹21,000/-</p>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+        <div class="card">
+            <h3>Basic Palmystry Course</h3>
+            <ul>
+                <li>● Basic learning of fingers and mounts</li>
+                <li>● shape and colour identification of fingers and palm.</li>
+                <li>● lines on palm</li>
+            </ul>
+            <p class="Price">₹21,00/-</p>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+        <div class="card">
+            <h3>Advance Palmystry Course</h3>
+            <ul>
+                <li>● Prediction of life events </li>
+                <li>● using Shape and Colour of palm</li>
+                <li>● using prits on finger</li>
+                <li>● using Line on Palm</li>
+            </ul>
+            <p class="Price">₹11,000/-</p>
+            <a href="contact.html" class="button">Contact</a>
+        </div>
+    </div>
+</section>
+    </div>
+</section>
+      
+        
+<!-- why choose us -->
+        <section class="as_whychoose_wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <h1 class="as_heading">Why Choose Us</h1>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="15" viewBox="0 0 240 15"> <image id="Design" width="240" height="15" xlink:href="data:img/png;base64,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"/> </svg>
+                          </span>  
+                        <p class="as_font14 as_padderTop20 as_padderBottom50">It is a long established fact that a reader will be distracted by the readable content of a page <br>when looking at its layout. The point of using Lorem Ipsum .</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <ul class="as_choose_ul">
+                            <li>
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="100"
+                                        data-speed="5000">100</span>+</span><img src="assets/images/svg/choose.svg" alt=""></span>
+                                    <h4>Trusted by Million Clients</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="30"
+                                        data-speed="5000">30</span>+</span><img src="assets/images/svg/choose.svg" alt=""></span>
+                                    <h4>Years of Experience</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="55"
+                                        data-speed="5000">55</span>+</span><img src="assets/images/svg/choose.svg" alt=""></span>
+                                    <h4>Types of Horoscopes</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="90"
+                                        data-speed="5000">90</span>+</span><img src="assets/images/svg/choose.svg" alt=""></span>
+                                    <h4>Qualified Astrologers</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="99"
+                                        data-speed="5000">99</span>+</span><img src="assets/images/svg/choose.svg" alt=""></span>
+                                    <h4>Success Horoscope</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+
+<!-- what my client says -->
+        
+<section class="as_customer_wrapper as_padderBottom80 as_padderTop80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="as_heading as_heading_center">What My Client Say</h1>
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="240" height="15" viewBox="0 0 240 15">
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="240" height="15"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </span>
+                <p class="as_font14 as_padderBottom50 as_padderTop20">Discover how my astrological readings have
+                    made a difference in the lives of my clients. Their feedback and stories offer a glimpse
+                    into how astrology can provide practical insights and spiritual clarity.Hear from those who
+                    have had the opportunity to work with me. Their stories reflect how astrology can positively
+                    impact one's life decisions and personal growth.</p>
+
+                <div class="row as_customer_slider">
+                    <div class="col-lg-5 col-md-5 as_customer_nav">
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op1.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op4.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op2.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op5.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op3.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="as_customer_img">
+                            <img src="IMAGES/op6.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 as_customer_for">
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"I had an incredible experience with Shivaay Jyotish. His
+                                astrological insights were spot-on and helped me gain clarity about the
+                                direction of my life. I now feel more confident in my decisions. Highly
+                                recommended!"”</p>
+                            <h3>Rina Sharma <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"Dr. Tiwari's reading was truly insightful. His predictions
+                                were surprisingly accurate, and he provided practical guidance that helped me
+                                understand my personal challenges better. I’m grateful for his wisdom."</p>
+                            <h3>Rajesh Kumar <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"I’ve consulted many astrologers, but Shivaay Jyotish stands
+                                out for his professionalism and deep understanding of astrology. His advice was
+                                not only accurate but also very comforting. I feel empowered to take charge of
+                                my future."</p>
+                            <h3>Sushmita Banerjee <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"My consultation with Shivaay Jyotish was amazing. He answered
+                                all my questions with precision, and his insights gave me a new perspective on
+                                life. I highly recommend him to anyone looking for astrological guidance."</p>
+                            <h3>Vikram Singh <span></span></h3>
+
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"I was looking for some direction in my life, and Dr. Tiwari's
+                                guidance was exactly what I needed. His reading opened my eyes to new
+                                possibilities, and I feel more spiritually aligned than ever before. Thank you,
+                                Dr. Tiwari!"</p>
+                            <h3>Anjali Desai <span></span></h3>
+                        </div>
+                        <div class="as_customer_box text-center">
+                            <p class="as_margin0">"Shivaay Jyotish's astrology consultation was transformative.
+                                He not only provided accurate predictions but also helped me understand the
+                                bigger picture of my life’s purpose. His advice has made a lasting impact on my
+                                journey."</p>
+                            <h3>Sandeep Agarwal <span></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- footer below -->
+
+            <!-- footer below -->
+
+        <section class="as_footer_wrapper as_padderTop80">
+            <div class="container">
+         <div class="as_footer_inner as_padderTop10 as_padderBottom40">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <div class="as_footer_widget">
+                                        <div class="as_footer_logo">
+                                            <a href="index.html"><img src="/IMAGES/logo.png" alt="" class="img-responsive"></a>
+                                        </div>
+                                        
+                                        <ul class="as_contact_list">
+                                            <li>
+                                                <img src="assets/images/svg/map.svg" alt="">
+                                                <p>Greater Noida West
+                                                    Contact no: +(91) 9455087756</p>
+                                            </li>
+                                            <li>
+                                                
+                                            </li>
+                                            
+                                           
+
+                                            <li>
+                                                <img src="assets/images/svg/mail.svg" alt="">
+                                                <p>
+                                                    <a href="javascript:;">Nilesh.nilesh1217@gmail.com</a>
+                                                </p> 
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="as_footer_widget">
+                                    <h3 class="as_footer_heading">Quick Links</h3>
+
+                                    <ul>
+                                        <li><a href="about.html"> About Us</a></li>
+                                        <li><a href="services.html"> services</a></li>
+
+                                        <li><a href="contact.html"> Contact Us</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+
+                                
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="as_footer_widget">
+                                 
+
+
+                                 <!-- Map code start here -->
+
+                                        <div style="color: #fff;">
+                                            <h3>Our Location</h3>
+                                            <div style="width: 300px; height: 300px; position: relative;">
+                                              <iframe 
+                                                src="https://www.google.com/maps/embed/v1/search?q=MANGALAM+ASTRO&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                                style="width: 100%; height: 100%; border: 0; position: absolute; top: 0; left: 0;" 
+                                                allowfullscreen="" loading="lazy" frameborder="0">
+                                              </iframe>
+                                            </div>
+                                          </div>
+
+
+
+                                <!-- Map code end here  -->
+
+
+                                    
+
+
+
+
+                                  
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="as_copyright_wrapper text-center">
+                            <p>Copyright &copy; 2024 CMT AI. All Right Reserved.</p>
+
+                        </div> 
+                    </div>
+        </section>    
+
+    </div>
+
+    </div>
+    
+
+    <!-- Modal -->
+    <div id="as_login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="as_login_box active">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter email" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter password here" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <div class="as_login_data">
+                                    <label>Remember me
+                                         <input type="checkbox" name="as_remember_me" value="">
+                                         <span class="checkmark"></span>
+                                    </label>
+                                    <a href="#">Forgot password ?</a>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:;" class="as_btn">login</a>
+                            </div>
+                        </form>
+                        <p class="text-center as_margin0 as_padderTop20">Create An Account ? <a href="javascript:;" class="as_orange as_signup">SignUp</a></p>
+                    </div>
+                    <div class="as_signup_box">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter name" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter email" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter password here" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Enter mobile number" class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <select name="" class="form-control" id="">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <a href="javascript:;" class="as_btn">Sign Up</a>
+                            </div>
+                        </form>
+                        <p class="text-center as_margin0 as_padderTop20">Have An Account ? <a href="javascript:;" class="as_orange as_login">Login</a></p>
+                    </div> 
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/countto/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/airdatepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/airdatepicker/i18n/datepicker.en.js"></script>
+    <script src="assets/js/custom.js"></script>  
+</body>
+</html>
