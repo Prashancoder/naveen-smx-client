@@ -1076,7 +1076,7 @@ a:visited {
 /* horoscope css end */
 /* service css start */
 .as_service_wrapper {
-  background-image: url("../images/bg4.jpg");
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1235,28 +1235,38 @@ a:visited {
 }
 /* service css end */
 
-/* course css start */
 
 /* course css  start*/
 
 
 /*========== Base Styles ==========*/
-.course-intro {
-  text-align: center;
-}
-.course-intro h1 {
-  font-size: 2rem;
-}
-.course-intro p {
-  font-size: 1rem;
-  color: black;
-}
+
 
 /* Swiper Container */
+.as_course_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Add controlled spacing between sections */
+  padding: 50px 0; /* Optional: Adjust padding */
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.course-intro {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px; /* Adjust for a controlled space */
+}
 .swiper-container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 ;
+  margin: 0 auto;
+  padding: 0;
   position: relative; /* This ensures absolutely positioned arrows stay within .swiper-container */
 }
 
@@ -1278,11 +1288,11 @@ a:visited {
   color: black;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 350px; /* Fixed height for uniformity on larger screens */
+  height: 400px; /* Fixed height for uniformity on larger screens */
   background-color: #fff;
   transition: background 0.5s, color 0.5s;
 }
@@ -1338,8 +1348,8 @@ a:visited {
 .swiper-button-prev,
 .swiper-button-next {
   color: #f37335;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 80%;
+  /* transform: translateY(-50%); */
 }
 .swiper-button-prev {
   left: 0;  /* Adjust as needed */
@@ -1349,64 +1359,10 @@ a:visited {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 20px;
+  font-size: 30px;
 }
 
-/*========== Responsive Adjustments ==========*/
 
-/* Tablet Portrait and below (max-width: 768px) */
-@media (max-width: 768px) {
-  .course-intro h1 {
-    font-size: 1.5rem;
-  }
-  .course-intro p {
-    font-size: 0.95rem;
-  }
-  
-  /* Let Swiper show only 1 slide by default on smaller devices
-     (Though Swiper's JS breakpoints also handle this, 
-      we're ensuring CSS doesn't conflict with user sizing) */
-  .swiper-container {
-    width: 95%;
-    padding: 10px 0;
-  }
-  
-  /* Cards: make them more flexible */
-  .card {
-    width: 90%;
-    height: auto; /* let content dictate height on smaller screens */
-    margin: 0 auto;
-    padding: 20px;
-  }
-}
-
-/* Mobile (max-width: 480px) */
-@media (max-width: 480px) {
-  .course-intro h1 {
-    font-size: 1.4rem;
-  }
-  .course-intro p {
-    font-size: 0.9rem;
-  }
-
-  .button {
-    padding: 8px 20px;
-    font-size: 0.8rem;
-  }
-  
-  /* If you feel the arrows are too large or too close on very small screens,
-     we can shrink them or move them slightly inward. Adjust if needed. */
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 16px; /* slightly smaller icons on mobile */
-  }
-  .swiper-button-prev {
-    left: 10px;
-  }
-  .swiper-button-next {
-    right: 10px;
-  }
-}
 
 
    
