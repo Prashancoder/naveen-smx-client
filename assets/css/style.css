@@ -457,9 +457,15 @@ a:visited {
   right: 0;
   z-index: 9;
 }
+.hello {
+  width: 80px; /* Set width to 20px */
+  display: block; /* Ensure it's a block element */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
 .as_logo {
   display: flex;
-  width: 148px;
+  width: 80px;
 }
 .as_menu ul {
   padding: 0;
@@ -1076,7 +1082,7 @@ a:visited {
 /* horoscope css end */
 /* service css start */
 .as_service_wrapper {
-  background-color: white;
+  background-image: url("../images/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3912,8 +3918,8 @@ form.d_block {
     margin-right: 5px;
   }
   .as_blog_detail .col-lg-4.col-md-4.col-sm-12 img {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 10px;
+    margin-bottom: 0px;
   }
   .as_bloquote {
     padding: 30px;
@@ -4149,6 +4155,197 @@ form.d_block {
     justify-content: center;
   }
 }
+@media (max-width: 425px) {
+  .as_verticle_center {
+    display: block;
+  }
+  .as_product_description {
+    padding: 50px 0 0;
+  }
+
+  .prod_detail {
+    display: block;
+  }
+
+  .prod_detail .as_btn {
+    margin: 0 0 30px;
+  }
+  .as_search_wrapper {
+    padding-top: 0;
+  }
+  .as_choose_ul li {
+    width: 100%;
+  }
+  .as_sign_box {
+    margin: 40;
+    margin: 30px auto 0 !important;
+  }
+  .as_blog_img img {
+    width: 100%;
+  }
+  .as_banner_slider .slick-arrow.slick-next {
+    right: -75px;
+  }
+  .as_toggle {
+    display: flex;
+    /*margin-right: 20px;*/
+    cursor: pointer;
+  }
+  .as_menu ul li,
+  .as_menu ul li a {
+    display: block;
+  }
+  .as_menu {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    background-color: var(--dark-color1);
+    z-index: 999;
+    width: 200px;
+    border-right: 2px solid var(--secondary-color);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu_open .as_menu {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .as_menu li {
+    display: flex;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    margin: 0;
+  }
+  .as_menu ul li a:before {
+    display: none;
+  }
+  .as_menu_wrapper {
+    padding: 12px 10px;
+  }
+  .as_cart_wrapper {
+    display: flex;
+  }
+  .as_cart_wrapper > span {
+    margin-right: 20px;
+  }
+  .as_info_detail {
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .as_right_info {
+    padding-left: 5px;
+  }
+  .as_search_inner {
+    padding: 0 20px;
+  }
+  .as_menu > ul > li .as_submenu {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100%;
+    right: auto !important;
+    padding: 0;
+    background-color: transparent;
+    display: none;
+  }
+  .as_service_img:after {
+    bottom: -40px;
+  }
+  .as_menu > ul > li .as_submenu .as_submenu {
+    display: none;
+  }
+  .as_menu > ul > li .as_submenu:before {
+    display: none;
+  }
+  .as_menu ul li .as_submenu.active {
+    display: block;
+  }
+  .as_menu ul li.as_submenu_li:after {
+    position: absolute;
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ffffff;
+    top: 25px;
+    right: 0;
+  }
+  .as_menu ul li.as_submenu_li ul li.as_submenu_li:after {
+    top: 18px;
+  }
+  .as_service_img .as_service_img {
+    position: unset;
+    transform: translate(0, 0);
+    margin: auto;
+  }
+  .as_service_img .as_service_circle {
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+  }
+  .as_service_img {
+    position: relative;
+    margin: 50px 0;
+    text-align: center;
+  }
+  .as_banner_slider .slick-arrow.as_btn {
+    min-width: 40px;
+    height: 40px;
+  }
+  .as_banner_slider .slick-arrow.slick-next,
+  .as_banner_slider .slick-arrow.slick-prev {
+    bottom: -50px;
+  }
+  .as_banner_slider .slick-arrow.slick-next {
+    left: 50px;
+  }
+  .as_service_single > ul {
+    padding: 0 0px 0 18px;
+  }
+  .as_blog_wrapper.as_padderBottom90 {
+    padding-bottom: 0px;
+  }
+  .as_shop_sidebar {
+    margin-bottom: 40px;
+  }
+  .as_shopsingle_slider .as_shopsingle_nav .slick-track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .as_shopsingle_slider .as_shopsingle_nav {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .as_shopsingle_slider .as_shopsingle_for {
+    width: 100%;
+    display: block;
+  }
+  .as_shopsingle_slider {
+    display: block;
+  }
+  .as_shopsingle_nav .as_prod_img {
+    margin: 0 10px 20px;
+  }
+  .as_shopsingle_nav .as_prod_img img {
+    height: auto;
+  }
+  .as_header_wrapper {
+    background-color: rgb(17 16 17);
+  }
+  .as_logo {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 600px) {
   .as_comment_section > ul > li .as_comnt_detail .as_btn {
     position: relative;
@@ -4258,27 +4455,50 @@ form.d_block {
 
 
 
-/* For smaller screens (mobile view) */
+/* For smaller screens (tablet and mobile) */
+
 @media (max-width: 768px) {
   .btn {
-    font-size: 12px;  /* Smaller font size for mobile */
-    padding: 6px 12px;  /* Reduced padding */
-    max-width: 150px;  /* Limit max-width to prevent buttons from becoming too large */
-    width: auto;  /* Button adjusts according to content */
-    margin: 10px auto;  /* Center the button horizontally */
-    position: relative;
-    right:120px;
+    font-size: 14px;  /* Slightly larger font for readability */
+    padding: 8px 16px;  /* Adequate padding for touch targets */
+    max-width: 100%;  /* Buttons span the width of their container */
+    width: auto;  /* Adjust button width according to content */
+    margin: 10px 0;  /* Add spacing between buttons */
+    position: relative;  /* Remove unnecessary positioning */
+    right: 0;  /* Remove offset */
   }
 
-  /* Center buttons on mobile */
+  /* Center buttons and stack them vertically */
   .d-grid {
     display: flex;
     flex-direction: column;  /* Stack buttons vertically */
     align-items: center;  /* Center buttons horizontally */
-    justify-content: center;  /* Center buttons vertically */
-    gap: 10px;  /* Add space between the buttons */
+    gap: 12px;  /* Add spacing between buttons */
   }
 }
+
+/* For extra small screens (mobile phones) */
+@media (max-width: 450px) {
+  .btn {
+    font-size: 12px;  /* Smaller font size for compact design */
+    padding: 6px 12px;  /* Reduced padding for smaller buttons */
+    max-width: 90%;  /* Buttons take up most of the container's width */
+    width: 100%;  /* Full width for better usability */
+    margin: 8px 0;  /* Adjust spacing between buttons */
+    position: relative;  /* Remove unnecessary positioning */
+    right: 0;  /* Remove offset */
+  }
+
+  /* Stack buttons vertically with tighter spacing */
+  .d-grid {
+    display: flex;
+    flex-direction: column;  /* Stack buttons */
+    align-items: center;  /* Center align horizontally */
+    gap: 8px;  /* Reduced gap for tighter stacking */
+  }
+}
+
+
 
 /* Flexbox for larger screens */
 .d-md-flex {
