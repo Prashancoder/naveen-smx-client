@@ -7514,7 +7514,7 @@ fieldset:disabled .btn {
     justify-content: flex-start !important;
   }
   .justify-content-md-end {
-    justify-content: flex-end !important;
+    justify-content: center !important;
   }
   .justify-content-md-center {
     justify-content: center !important;
