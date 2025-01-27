@@ -24,43 +24,24 @@
     </div> 
     <div class="as_main_wrapper as_about_page">
         <!-- navbar -->
-        <section class="as_header_wrapper">
-            <div class="as_info_detail">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                        <div class="as_logo">
-                            <a href="index.html">
-                                <img src="IMAGES/logo1.png" alt="" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6">
-                        <div class="as_right_info">
-                            <div class="as_menu_wrapper">
-                                <span class="as_toggle">
-                                    <img src="assets/images/svg/menu.svg" alt="">
-                                </span>
-                                <div class="as_menu">
-                                    <ul>
-                                        <li><a href="index.html" >home</a></li>
-                                        <li><a href="about.html" class="active">about us</a></li>
-                                          <li><a href="services.html">services</a></li>
-                                        <li><a href="contact.html">contact</a></li>
-                                        <li><a href="tel:+919099799780">Call Us Now!</a> </li>
-                                
-                                    </ul>
-                                </div>
-                            </div>
-                           
-
-        
-                        </div>
-                    </div>
+               <!-- navbar -->
+               <nav class="shivay-navbar">
+                <div class="shivay-logo">
+                  <img src="IMAGES/logo1.png" alt="" class="shivay-logo">
                 </div>
-            </div>
-        </section> 
+                <button class="shivay-hamburger" id="shivay-hamburger">
+                  <span class="shivay-bar"></span>
+                  <span class="shivay-bar"></span>
+                  <span class="shivay-bar"></span>
+                </button>
+                <div class="shivay-menu" id="shivay-menu">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="services.html">Services</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="#tel:+919099799780">Call Us Now</a>
+                </div>
+              </nav>
 
         <!-- carausal -->
        <section class="as_breadcrum_wrapper">
@@ -346,7 +327,7 @@
                                 <div class="col-lg-5 col-md-6 col-sm-12">
                                     <div class="as_footer_widget">
                                         <div class="as_footer_logo">
-                                            <a href="index.html"><img src="IMAGES/logo1.png" alt="" class="img-responsive"></a>
+                                            <a href="index.html"><img src="IMAGES/logo1.png" alt="" class="img-responsive" style="height: 200px; width: 200px; margin-bottom:10px;"></a>
                                         </div>
                                         
                                         <ul class="as_contact_list">
@@ -426,26 +407,9 @@
 
                         </div> 
                     </div>
-        </section>   
-        
+        </section>      
         
     </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
     <!-- Modal -->
@@ -524,6 +488,27 @@
     <script type="text/javascript" src="assets/js/plugin/airdatepicker/i18n/datepicker.en.js"></script>
     <script src="assets/js/custom.js"></script>  
     <script src="assets/js/videoControl.js"></script>
+          <!-- below is the navbar js -->
+          <script>
+            const hamburger = document.getElementById('shivay-hamburger');
+            const menu = document.getElementById('shivay-menu');
+        
+            hamburger.addEventListener('click', () => {
+              menu.classList.toggle('active');
+              hamburger.classList.toggle('open');
+            });
+        
+            /* Toggle between hamburger and cross icon */
+            hamburger.addEventListener('click', () => {
+              const bars = hamburger.querySelectorAll('.shivay-bar');
+              bars.forEach((bar, index) => {
+                bar.style.transform = menu.classList.contains('active')
+                  ? `rotate(${index === 0 ? 45 : -45}deg) translate(${index === 0 ? '5px' : '-5px'}, 5px)`
+                  : '';
+                bar.style.opacity = index === 1 && menu.classList.contains('active') ? '0' : '1';
+              });
+            });
+          </script>
 </body>
 </html>
 
