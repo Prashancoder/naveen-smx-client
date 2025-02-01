@@ -434,6 +434,49 @@ a:visited {
   -webkit-animation: spin 7s infinite linear;
   -moz-animation: spin 7s infinite linear;
 }
+
+
+/* WhatsApp Floating Button - Visible on All Screens */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999; /* Keeps it above everything */
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Hover Effect */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Ensure it works on all screen sizes */
+@media screen and (max-width: 768px) {
+  .whatsapp-float {
+      width: 50px;
+      height: 50px;
+  }
+  .whatsapp-float img {
+      width: 30px;
+      height: 30px;
+  }
+}
+
+
+
 /* header css start */
 /* Navbar Styles */
 .shivay-navbar {
